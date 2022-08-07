@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+body {
+    font-size: 20px;
+    text-align: center;
+    padding: 40px 0 10px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+main {
+    height: 90vh;
+    width: 35vw;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+h1 span {
+    color: hsl(0, 0%, 59%);
+    font-weight: 300;
+}
+
+p {
+    margin-top: 10px;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+}
+
+.form-left {
+    width: 70%;
+}
+
+input {
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid hsl(223, 100%, 88%);
+    height: 40px;
+    width: 100%;
+}
+
+input::placeholder {
+    color: hsl(223, 100%, 88%);
+    font-weight: 300;
+}
+
+input:focus {
+    border: 1px solid hsl(223, 87%, 63%);
+    outline: none;
+}
+
+.form-right {
+    width: 25%;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    background-color: hsl(223, 87%, 63%);
+    border: none;
+    cursor: pointer;
+    font-size: 1vw;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.error {
+    margin-left: 25px;
+    margin-top: 10px;
+    font-weight: 300;
+    color: hsl(354, 100%, 66%);
+    font-size: 0.6rem;
+    float: left;
+    display: none;
+}
+
+.center-img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(223, 87%, 63%);
+    border: 1px solid hsl(223, 87%, 63%);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+li:hover {
+    cursor: pointer;
+    color: white;
+    background-color: hsl(223, 87%, 63%);
+}
+
+p:last-child {
+    font-size: 10px;
+    color: hsl(0, 0%, 59%);
+}
+
+@media (max-width: 420px) { 
+    main {
+        width: 90vw;
+    }
+    
+    h1 {
+        font-size: 8vw;        
+    }
+
+    .form-left {
+        width: 100%;
+    }
+
+    .form-right {
+        width: 100%;
+    }
+    
+    form {
+        display: inline-block;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    button {
+        font-size: initial;
+        margin-top: 20px;
+    }
+    
+   .error {
+        float: initial;
+    }
+}
